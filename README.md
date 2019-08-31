@@ -1,2 +1,2 @@
-# myApp
-Meu app de teste
+# BelemTurismo
+Aplicativo de turismo na cidade de Belém/ Pará
