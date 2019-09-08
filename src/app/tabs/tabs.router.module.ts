@@ -18,16 +18,6 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'sugestoes',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../sugestoes/sugestoes.module').then(m => m.SugestoesPageModule)
-          }
-        ]
-      },
-      {
         path: 'eventos',
         children: [
           {
@@ -47,18 +37,16 @@ const routes: Routes = [
           }
         ]
       },
-
-
       {
         path: '',
-        redirectTo: '/categorias/categorias',
+        redirectTo: '/tabs/categorias',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/categorias/categorias',
+    redirectTo: '/tabs/categorias',
     pathMatch: 'full'
   }
 ];
