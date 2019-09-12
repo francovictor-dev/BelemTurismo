@@ -6,8 +6,24 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  { path: 'eventos', loadChildren: './eventos/eventos.module#EventosPageModule' }
+  {
+    path: 'hoteis',
+    loadChildren: () => import('./hoteis/hoteis.module').then(m => m.HoteisPageModule)
+  },
+  {
+    path: 'restaurantes',
+    loadChildren: () => import('./restaurantes/restaurantes.module').then(m => m.RestaurantesPageModule)
+  },
+  {
+    path: 'pontos-turisticos',
+    loadChildren: () => import('./pontos-turisticos/pontos-turisticos.module').then(m => m.PontosTuristicosPageModule)
+  },
+  {
+    path: 'praias',
+    loadChildren: () => import('./praias/praias.module').then(m => m.PraiasPageModule)
+  }
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

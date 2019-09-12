@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
-import { EventosPage } from './eventos.page';
+import { PontosTuristicosPage } from './pontos-turisticos.page';
 
 @NgModule({
   imports: [
@@ -14,10 +14,10 @@ import { EventosPage } from './eventos.page';
     RouterModule.forChild([
         {
           path: '',
-          component: EventosPage
+          component: PontosTuristicosPage
         }
     ])
   ],
-  declarations: [EventosPage]
+  declarations: [PontosTuristicosPage]
 })
-export class EventosPageModule {}
+export class PontosTuristicosPageModule {}
