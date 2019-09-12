@@ -21,7 +21,12 @@ const routes: Routes = [
   {
     path: 'praias',
     loadChildren: () => import('./praias/praias.module').then(m => m.PraiasPageModule)
+  },
+  {
+    path: 'intro',
+    loadChildren: () => import('./intro/intro.module').then(m => m.IntroPageModule)
   }
+
 ];
 
 @NgModule({
