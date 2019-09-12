@@ -1,5 +1,7 @@
 {
   "name": "BelemTurismo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

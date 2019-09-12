@@ -1,9 +1,135 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>intro</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="ID" --variable APP_NAME="name"
+     npm install --save @ionic-native/facebook
+-->
 
-<ion-content>
+<ion-content fullscreen padding scroll-y="false">
+
+  <ion-slides pager="true" [options]="slideOpts">
+
+    <ion-slide>
+      <img class="slide_image" src="assets/images/imagem_idioma.png">
+      <h1>Idioma</h1>
+      <p>Para melhor <b>experiência</b>
+        escolha o idioma de preferência
+      </p>
+        <ion-item>
+          <ion-label>Idioma</ion-label>
+          <ion-select>
+            <ion-select-option value="portugues">Portugues (Brasil)</ion-select-option>
+            <ion-select-option value="ingles">Inglês</ion-select-option>
+          </ion-select>
+        </ion-item>
+      <br>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <img class="slide_image" src="assets/images/imagem_mobile.png">
+      <h1>Tutorial</h1>
+      <p>Bem vindo ao aplicativo <b>Belém Turismo</b>. Aplicativo feito para você
+        que pretende conhecer a capital do Pará.
+      </p>
+      <p>
+        <strong>Vamos lá?   </strong>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Categoria</h1>
+      <p>Nessa aba você poderá escolher qual tipo de lugar <b>desejas conhecer</b>.
+        Após escolher, será capaz de ver uma lista de todos os lugares relacionado
+        que você se interessou.
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Lugares</h1>
+      <p>Cada lugar você poderá ver fotos, informações, avaliações e de até ver comentários
+         de outros usuários. <b>Você tambem</b> pode avaliá-los, fazer um comentário e marcar
+         como um lugar visitado.
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Eventos</h1>
+      <p>Todos os <b>eventos</b> do ano serão disponiveis para você.
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Mapa</h1>
+      <p>Com o mapa indicará sua localização e dos <b>lugares</b> perto de você.
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Menu lateral</h1>
+      <p>Você poderá, tambem, ver seu perfil no menu lateral que pode ser acessado
+        clicando no <b>botão de menu</b>, localizado no canto esquerdo e superior do seu dispositivo.
+      </p>
+      <p>
+        <a (click)="goToTabsPage()">Skip</a>
+      </p>
+      <br>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Login</h1>
+      <p>Agora, para finalizar, faça o login com seu perfil do <b>Facebook</b> para poder
+        interagir com o aplicativo da melhor forma.
+      </p>
+
+      <p>
+        <ion-button expand="block" (click)="loginComFB()" >
+          <img class="facebook_image" src="assets/images/logo_facebook.png">
+           Facebook
+          </ion-button>
+      </p>
+
+
+      <!--<p>Nome: {{ userData.email }}</p>
+      <p>Email: {{ userData.first_name }}</p>
+      <form onsubmit="processForm(event)">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+            <ion-item>
+              <ion-label position="stacked">Email ou telefone <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Senha <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="password" oninput="handleLastNameValue(event)"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Entrar</ion-button>
+        </div>
+      </form>-->
+
+      <a (click)="goToTabsPage()">Finalizar</a>
+    </ion-slide>
+
+    </ion-slides>
 
 </ion-content>
