@@ -10,35 +10,57 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
+    <ion-card class="titulo">
       <ion-card-header>
-        <ion-card-subtitle>Belém Tur</ion-card-subtitle>
+        <ion-card-subtitle>Belém Turísmo</ion-card-subtitle>
         <ion-card-title>Bem vindo(s)</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Aplicativo de turismo da cidade de Belém/ Pará</p>
+        <p>Aplicativo de turismo da cidade de Belém / Pará</p>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Categorias</ion-label>
-      </ion-list-header>
-      <ion-item href="hoteis">
-        <ion-icon slot="start" color="medium" name="stats"></ion-icon>
-        <ion-label>Hotéis</ion-label>
-      </ion-item>
-      <ion-item href="restaurantes">
-        <ion-icon slot="start" color="medium" name="restaurant"></ion-icon>
-        <ion-label>Restaurantes</ion-label>
-      </ion-item>
-      <ion-item href="pontos-turisticos">
-        <ion-icon slot="start" color="medium" name="car"></ion-icon>
-        <ion-label>Pontos Turísticos</ion-label>
-      </ion-item>
-      <ion-item href="praias">
-        <ion-icon slot="start" color="medium" name="boat"></ion-icon>
-        <ion-label>Praias</ion-label>
-      </ion-item>
-    </ion-list>
+
+    <ion-card class="welcome-card">
+      <ion-list lines="none">
+          <ion-item href="pontos-turisticos">
+              <ion-label>Hotéis</ion-label>
+          </ion-item>
+          <ion-item href="hoteis">
+            <img src="/assets/atrium-quinta-de-pedras.jpg" alt="" />
+          </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card class="welcome-card">
+      <ion-list lines="none">
+          <ion-item href="pontos-turisticos">
+              <ion-label>Restaurantes</ion-label>
+          </ion-item>
+          <ion-item href="restaurantes">
+              <img src="/assets/274551_original.jpg" alt="" />
+          </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card class="welcome-card">
+      <ion-list lines="none">
+          <ion-item href="pontos-turisticos">
+              <ion-label>Pontos Turísticos</ion-label>
+          </ion-item>
+          <ion-item href="pontos-turisticos">
+              <img src="/assets/hoteis-e-pousadas-em-belem-teatro-da-paz.jpg" alt="" />
+          </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card class="welcome-card">
+      <ion-list lines="none">
+          <ion-item href="pontos-turisticos">
+              <ion-label>Praias</ion-label>
+          </ion-item>
+          <ion-item href="praias">
+              <img src="/assets/praia_mosqueiro_3.jpg" alt="" />
+          </ion-item>
+        </ion-list>
+    </ion-card>
 </ion-content>
